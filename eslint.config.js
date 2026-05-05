@@ -39,6 +39,10 @@ export default defineConfig(
 	{
 		// Override or add rule settings here, such as:
 		// 'svelte/button-has-type': 'error'
-		rules: {}
+		rules: {
+			// All hrefs in this project are absolute external URLs; the rule
+			// cannot trace through MemberExpressions so we opt out of link checks.
+			'svelte/no-navigation-without-resolve': ['error', { ignoreLinks: true }]
+		}
 	}
 );
