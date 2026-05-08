@@ -8,10 +8,10 @@
         label: 'Go to app →'
       },
       {
-        title: 'Coming Soon...',
-        description: 'More projects and resources coming soon!',
-        href: 'https://ashholdsworth.co.uk/',
-        label: undefined
+        title: 'Meal Planner Test',
+        description: 'Test environment for the meal planner app, showcasing new features and improvements',
+        href: 'https://mealplanner.test.ashholdsworth.co.uk/',
+        label: 'Test the app →'
       },
       {
         title: 'Also Coming Soon...',
