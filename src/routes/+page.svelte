@@ -5,25 +5,33 @@
         title: 'Meal Planner',
         description: 'Plan your meals and shopping list efficiently',
         href: 'https://mealplanner.ashholdsworth.co.uk/',
-        label: 'Go to app →'
+        label: 'Meal Planner →'
       },
       {
         title: 'Meal Planner Test',
-        description: 'Test environment for the meal planner app, showcasing new features and improvements',
+        description:
+          'Test environment for the meal planner app, showcasing new features and improvements',
         href: 'https://mealplanner.test.ashholdsworth.co.uk/',
-        label: 'Test the app →'
+        label: 'Test new Meal Planner features →'
       },
       {
-        title: 'Also Coming Soon...',
-        description: 'More projects and resources coming soon!',
-        href: 'https://ashholdsworth.co.uk/',
-        label: undefined
+        title: 'Home Assistant',
+        description:
+          'Control and automate your smart home with Home Assistant, a powerful open-source platform',
+        href: 'https://homeassistant.ashholdsworth.co.uk/',
+        label: 'Go to dashboard →'
       },
       {
-        title: 'Coming Soon aswell...',
-        description: 'More projects and resources coming soon!',
-        href: 'https://ashholdsworth.co.uk/',
-        label: undefined
+        title: 'Jellyfin',
+        description: 'Stream and manage your media with Jellyfin, a free software media system',
+        href: 'https://media.ashholdsworth.co.uk/',
+        label: 'Launch Jellyfin →'
+      },
+      {
+        title: 'Manage your account',
+        description: 'Manage your account settings and preferences',
+        href: 'https://auth.ashholdsworth.co.uk/',
+        label: 'Manage your account →'
       }
     ];
 </script>
