@@ -1,2 +1,7 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+@plugin "daisyui/index.js";
+
+body {
+	overflow-x: hidden;
+}

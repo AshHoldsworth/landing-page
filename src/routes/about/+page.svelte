@@ -1,47 +1,54 @@
-<section class="px-6 py-20">
-  <div class="mx-auto max-w-4xl">
-    <h1 class="mb-8 text-4xl font-bold tracking-tight text-gray-900">About</h1>
+<section class="px-4 py-10 sm:px-6 sm:py-14">
+  <div class="mx-auto max-w-5xl">
+    <div class="card border border-base-300 bg-base-100 shadow-sm">
+      <div class="card-body gap-7 sm:gap-8">
+        <div class="flex items-start justify-between gap-4">
+          <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">About</h1>
+        </div>
 
-    <div class="prose space-y-6 text-gray-700 prose-indigo">
-      <p>
-        Welcome to my really basic landing page, built with SvelteKit. This is a simple project to
-        experiment with different web technologies and provide links to my GitHub and other
-        resources.
-      </p>
+        <p class="text-base-content/80">
+          This is a lightweight SvelteKit landing page for project links and updates, styled to
+          match the same design language used in Food and Drink App.
+        </p>
 
-      <h2 class="mt-12 text-2xl font-bold text-gray-900">What's here</h2>
-      <ul class="list-inside list-disc space-y-2">
-        <li>A landing page with hero section and feature cards</li>
-        <li>Global layout with header and footer</li>
-        <li>Links to external resources and documentation</li>
-        <li>Responsive design that works on all devices</li>
-      </ul>
+        <div>
+          <h2 class="mb-3 text-xl font-semibold">What is here</h2>
+          <ul class="list-disc space-y-2 pl-5 text-base-content/80">
+            <li>Hero section and quick-access project links</li>
+            <li>Reusable global layout with navbar and footer</li>
+            <li>Responsive card UI optimized for mobile and desktop</li>
+            <li>Simple deployment-ready SvelteKit setup</li>
+          </ul>
+        </div>
 
-      <h2 class="mt-12 text-2xl font-bold text-gray-900">Technology Stack</h2>
-      <p>Built with:</p>
-      <ul class="list-inside list-disc space-y-2">
-        <li><strong>SvelteKit</strong> — Modern web framework with routing and SSR</li>
-        <li><strong>Tailwind CSS v4</strong> — Utility-first CSS framework</li>
-        <li><strong>TypeScript</strong> — Type-safe development</li>
-        <li><strong>Vite</strong> — Lightning-fast build tool</li>
-      </ul>
+        <div>
+          <h2 class="mb-3 text-xl font-semibold">Technology Stack</h2>
+          <ul class="list-disc space-y-2 pl-5 text-base-content/80">
+            <li><strong>SvelteKit</strong> with route-based architecture</li>
+            <li><strong>Tailwind CSS v4</strong> with <strong>DaisyUI</strong> theme tokens</li>
+            <li><strong>TypeScript</strong> for safer development</li>
+            <li><strong>Vite</strong> for fast local and production builds</li>
+          </ul>
+        </div>
 
-      <h2 class="mt-12 text-2xl font-bold text-gray-900">Resources</h2>
-      <ul class="list-inside list-disc space-y-2">
-        <li>
-          <strong>Meal Planner</strong> — a meal planning and shopping list app built with Next.js and
-          .NET
-        </li>
-      </ul>
-    </div>
+        <div>
+          <h2 class="mb-3 text-xl font-semibold">Featured Resource</h2>
+          <div class="mb-3 rounded-box border border-base-300 bg-neutral-content p-4 text-sm text-base-content/80">
+            <strong>Meal Planner</strong> is a food and shopping planner app built with Next.js and
+            .NET.
+          </div>
+          <div class="mb-3 rounded-box border border-base-300 bg-neutral-content p-4 text-sm text-base-content/80">
+            <strong>Home Assistant</strong> is a self-hosted smarthome automation platform that focuses on local control.
+          </div>
+          <div class="mb-3 rounded-box border border-base-300 bg-neutral-content p-4 text-sm text-base-content/80">
+            <strong>Jellyfin</strong> is a self-hosted media service for streaming media to all your devices.
+          </div>
+        </div>
 
-    <div class="mt-12 flex gap-4">
-      <a
-        href="/"
-        class="rounded-xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-indigo-500"
-      >
-        Back to home
-      </a>
+        <div class="card-actions pt-2">
+          <a href="/" class="btn btn-neutral">Back to home</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>

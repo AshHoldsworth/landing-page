@@ -36,44 +36,55 @@
     ];
 </script>
 
-<!-- Hero -->
-<section class="bg-linear-to-b from-indigo-50 to-white px-6 py-24 text-center">
-  <div class="mx-auto max-w-2xl">
-    <h1 class="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">
-      Welcome to<br /><span class="text-indigo-600">Ash Holdsworth</span>
-    </h1>
-    <div class="mt-10 flex flex-wrap justify-center gap-4">
-      <a
-        href="https://github.com/AshHoldsworth"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="rounded-xl border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-700 shadow-sm transition-colors hover:bg-gray-50"
-      >
-        View on GitHub
-      </a>
+<section class="px-4 pt-8 sm:px-6 sm:pt-12">
+  <div class="hero rounded-2xl border border-base-300 bg-base-100 shadow-sm">
+    <div class="hero-content py-14 text-center">
+      <div class="max-w-2xl">
+        <h1 class="text-4xl font-bold leading-tight sm:text-6xl">
+          Welcome to<br /><span class="text-primary">Ash Holdsworth</span>
+        </h1>
+        <p class="mt-5 text-base-content/70">
+          Quick links to projects, experiments, and what is coming next.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a
+            href="https://github.com/AshHoldsworth"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-neutral"
+          >
+            View on GitHub
+          </a>
+          <a href="/about" class="btn btn-outline">About this site</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Feature cards -->
-<section id="features" class="px-6 py-20">
-  <div class="mx-auto max-w-5xl">
-    <h2 class="mb-12 text-center text-3xl font-bold text-gray-900">Explore...</h2>
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<section id="features" class="px-4 py-12 sm:px-6 sm:py-16">
+  <div class="mx-auto max-w-6xl">
+    <div class="mb-8 flex items-center justify-between gap-4">
+      <h2 class="text-2xl font-bold sm:text-3xl">Explore</h2>
+      <span class="badge badge-outline">{links.length} Links</span>
+    </div>
+    <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
       {#each links as link (link.title)}
         <a
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          class="group flex flex-col rounded-2xl border border-gray-200 bg-white p-6 shadow-sm transition hover:border-indigo-300 hover:shadow-md"
+          class="card border border-base-300 bg-base-100 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
         >
-          <h3
-            class="mb-2 font-semibold text-gray-900 transition-colors group-hover:text-indigo-600"
-          >
-            {link.title}
-          </h3>
-          <p class="flex-1 text-sm leading-relaxed text-gray-500">{link.description}</p>
-          <span class="mt-4 text-sm font-medium text-indigo-600">{link.label}</span>
+          <div class="card-body gap-3">
+            <h3 class="card-title text-lg">{link.title}</h3>
+            <p class="text-sm text-base-content/70">{link.description}</p>
+            {#if link.label}
+              <div class="card-actions mt-2">
+                <span class="btn btn-sm btn-soft btn-primary">{link.label}</span>
+              </div>
+            {/if}
+          </div>
         </a>
       {/each}
     </div>

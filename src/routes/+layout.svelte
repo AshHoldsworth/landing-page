@@ -7,43 +7,44 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<!-- Nav -->
-<header class="sticky top-0 z-10 border-b border-gray-200 bg-white/80 backdrop-blur">
-  <div class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-    <a href="/" class="text-lg font-semibold tracking-tight text-gray-900">Ash Holdsworth</a>
-    <nav class="flex gap-6 text-sm text-gray-600">
+<header class="navbar sticky top-0 z-20 bg-info-content text-base-100 shadow-sm">
+  <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-4 sm:px-6">
+    <a href="/" class="btn btn-ghost text-xl normal-case">Ash Holdsworth</a>
+    <nav class="menu menu-horizontal gap-1 px-0 text-sm">
       <a
         href="https://github.com/AshHoldsworth"
         target="_blank"
         rel="noopener noreferrer"
-        class="transition-colors hover:text-gray-900"
+        class="btn btn-ghost btn-sm"
       >
         GitHub
       </a>
-      <a href="/about" class="transition-colors hover:text-gray-900"> About </a>
+      <a href="/about" class="btn btn-ghost btn-sm">About</a>
     </nav>
   </div>
 </header>
 
-<main>
+<main class="min-h-screen bg-neutral-content pb-10">
   {@render children()}
 </main>
 
-<!-- Footer -->
-<footer class="border-t border-gray-200 px-6 py-8 text-center text-sm text-gray-400">
-  <p>
-    Built with <a
+<footer class="footer footer-center bg-info-content p-6 text-base-100">
+  <p class="text-sm opacity-90">
+    Built with
+    <a
       href="https://svelte.dev"
       target="_blank"
       rel="noopener noreferrer"
-      class="text-indigo-500 hover:underline">SvelteKit</a
+      class="link link-hover font-semibold"
+      >SvelteKit</a
     >
     &amp;
     <a
       href="https://tailwindcss.com"
       target="_blank"
       rel="noopener noreferrer"
-      class="text-indigo-500 hover:underline">Tailwind CSS</a
+      class="link link-hover font-semibold"
+      >Tailwind CSS</a
     >
   </p>
 </footer>
