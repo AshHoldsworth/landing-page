@@ -43,6 +43,9 @@
           <div class="mb-3 rounded-box border border-base-300 bg-neutral-content p-4 text-sm text-base-content/80">
             <strong>Jellyfin</strong> is a self-hosted media service for streaming media to all your devices.
           </div>
+          <div class="mb-3 rounded-box border border-base-300 bg-neutral-content p-4 text-sm text-base-content/80">
+            <strong>Scrum Poker</strong> is a collaborative estimation tool for agile planning sessions built using Next.js and a websocket-based Node backend.
+          </div>
         </div>
 
         <div class="card-actions pt-2">

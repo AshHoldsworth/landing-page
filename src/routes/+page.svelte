@@ -28,6 +28,12 @@
         label: 'Launch Jellyfin →'
       },
       {
+        title: 'Scrum Poker',
+        description: 'Facilitate agile planning sessions with Scrum Poker, a collaborative estimation tool',
+        href: 'https://poker.ashholdsworth.co.uk/',
+        label: 'Get Estimating →'
+      },
+      {
         title: 'Manage your account',
         description: 'Manage your account settings and preferences',
         href: 'https://auth.ashholdsworth.co.uk/',
