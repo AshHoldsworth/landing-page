@@ -28,6 +28,12 @@
         label: 'Launch Jellyfin →'
       },
       {
+        title: 'Cameras',
+        description: 'Monitor your security cameras',
+        href: 'https://cameras.ashholdsworth.co.uk/',
+        label: 'View Cameras →'
+      },
+      {
         title: 'Scrum Poker',
         description: 'Facilitate agile planning sessions with Scrum Poker, a collaborative estimation tool',
         href: 'https://poker.ashholdsworth.co.uk/',
